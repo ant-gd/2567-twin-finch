@@ -186,7 +186,7 @@ li a:hover {
 	background-color: #291a18;
 }
 
-#hero a {
+#hero a, .bg-brown a, section a {
 	background-color: #84161f;
 }
 
@@ -195,7 +195,7 @@ li a:hover {
 /* ------------5.2 text-colors
 ----------------------------*/
 
-.col-1-4 h4, .col-1-6 a, h1, #hero p, #hero a {
+.col-1-4 h4, .col-1-6 a, h1, #hero p, #hero a, section a, .bg-brown a {
 	color: #f9ead7;
 }
 
@@ -215,57 +215,36 @@ h3 {
 	font-size: 1.25rem;
 }
 
+.col-1-3 a {
+	font-size:.65rem; 
+}
+
 /* --------------5.4 Alignment
 ----------------------------*/
 
+h2, .text-center-75, nav ul, #article-link {
+	text-align: center;
+}
+
 .text-center-75 {
 	margin: 0 auto;
-}
-
-#hero {
-	padding: 20rem 0 5rem 0;
-}
-
-li a, .bg-brown {
-	padding: 2rem 0;
 }
 
 .bg-brown {
     margin: 3rem 0;
 }
 
-h2, .row {
+.row {
 	margin: 3rem 0 1rem 0;
 }
 
-[class*='col-'] {
-	float: left;
-	padding: 0 10px 20px 10px;
-}
 
-[class*='col-']:first-of-type {
-	padding-left: 0;
-}
+ h2 {
+	margin: 6rem 0 1rem 0;
+ }
 
-[class*='col-']:last-of-type {
-	padding-right: 0;
-}
-
-.col-1-3 {
-	float:left;
-}
-
-.col-2-3 {
-	float:right;
-}
-
-h1 {
-	padding-bottom: 0;
-	margin-bottom: 0;
-}
-
-h2, .text-center-75, nav ul {
-	text-align: center;
+header .row {
+	margin: 0;
 }
 
 .col-1-3 figure img, .col-1-3 .row .col-1-3 figure img {
@@ -280,15 +259,67 @@ h4 {
 	-webkit-margin-before: .5rem;
 }
 
+header figure	{
+	-webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+}
+
+h1 {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
 nav ul li {
 	padding: 0 3rem;
 }
+
+#hero {
+	padding: 20rem 0 5rem 0;
+}
+
+li a, .bg-brown {
+	padding: 2rem 0;
+}
+
+.bg-brown input {
+	padding: .5rem 0;
+}
+
+.col-1-3 a {
+	padding: .35rem 1rem;
+}
+
+[class*='col-']:first-of-type {
+	padding-left: 0;
+}
+
+[class*='col-']:last-of-type {
+	padding-right: 0;
+}
+
+p {
+	line-height: 1.5rem;
+}
+
+
+[class*='col-'], #hero a {
+	float:left;
+}
+
+.col-2-3, .col-1-2 .col-8-10, #submit, section a {
+	float:right;
+}
+
+
+
 
 /*--------------------------------------------------------------
 6.0 - 12 COLUMN GRID
 -------------------------------------------------------------- */
 
-.col-1 {
+.col-1, input, textarea {
 	width: 100%;
 }
 .col-1-2 {
@@ -306,7 +337,7 @@ nav ul li {
 .col-3-4 {
 	width: 75%;
 }
-.col-1-5 {
+.col-1-5, #submit {
 	width: 20%;
 }
 .col-3-5 {
@@ -327,7 +358,7 @@ nav ul li {
 .col-1-8 {
 	width: 12.5%;
 }
-.col-6-8, input, textarea {
+.col-6-8 {
 	width: 75%;
 }
 .col-1-9 {
@@ -369,10 +400,12 @@ nav ul li {
 	}
 	
 	
-	.col-1-3, .col-2-3, .col-1-5, .col-3-5, .col-1-6, .col-4-6, .col-1-7, .col-5-7, .col-6-8, .col-7-9, .col-1-9, .col-8-10, .col-1-10, .col-1-11, .col-9-11, .col-1-12, .col-10-12 {
+	[class*='col-'] {
+		padding: 0 10px 20px 10px;
 		width: 100%;	
-		padding: 0 0 20px 0;
+
 	}
+	
 	
 	.col-1-4, .col-3-4, .col-1-8 {
 		width: 50%;
@@ -399,10 +432,15 @@ nav ul li {
 		width:100px;
 		margin-left: 0;
 
-}
+	}
 
 	.col-1-3 figure img {
 	margin-left: 0;
-}
+	}
+	
+	#hero {
+		padding: 6rem 0 6rem 0;
+	}
+	
 	
 }

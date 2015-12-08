@@ -43,13 +43,13 @@
         <section>
             <h1>Twin Finch Roastery</h1>
             <p>Twin Finch Roastery is an authentic micro-roastery; small, dedicated, and highly, foused on quality. We have a constantly evolving, hand picked selection of fine coffee origins and delicious blends engineered to help you brew a cafe- quality cup at home.</p>
-            <a>View our product</a> 
+            <a href="#product">View our product</a> 
         </section>
     </div>
 </div>
 <div class="wrapper">
 	<section>
-    <h2>Our Product</h2>
+    <h2 id="product">Our Product</h2>
     <p class="text-center-75">Our coffee is roasted in a hot air, refractory lined roaster with an extraordinary level of control. The significance of relying on a high volume of hot air to roast coffee beans can't be understated. Most small coffee roasters use a single stage burner which offers virtually no control during the roasting process. The refractory significantly reduces hot spots which can damage coffee beans and produces a much more even roasting enviorment.</p>
   	</section>
     <div class="row">
@@ -140,7 +140,7 @@
         </section>
 	</div>
     <p class="text-center-75"> Our orders usually ship quickly and arrive within three buisness days. We only ship the freshest coffee and your satisfaction is guarenteed. Our rotating, featured coffees are roasted on a more limited basis and your order may be held until the next time a natch hits the roaster. We only ship whole bean, but will grind for your in-store per request.</p>
-    <a> How to brew article</a> 
+    <a id="article-link"> How to brew article</a> 
 </div>
 <div class="bg-brown">
 	<div class="wrapper">
@@ -150,7 +150,7 @@
       		</div>
             <div class="col-1-2">
                 <label></label>
-                <input >
+                <input type="email" name="email" placeholder="Enter your email here..">
       		</div>
           	<div class="col-1-6">
             	<a>Subscribe</a>
@@ -168,6 +168,7 @@
       		</div>
         </div>
     	<div class="col-1-2">
+        	<div class="col-8-10">
         	<form>
             	<label>Name</label>
                 <input type="text" name="fname">
@@ -175,8 +176,9 @@
                 <input type="email" name="email" >
                 <label>Comment</label>
                 <textarea rows="6"></textarea>
-                <input type="submit" value="submit">
+                <input id="submit" type="submit" value="submit">
             </form>
+            </div>
        	</div>
 	</div>
 </div>
