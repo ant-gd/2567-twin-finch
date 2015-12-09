@@ -24,130 +24,197 @@
 <title>Responsive Grid</title>
 </head>
 
+<!-- Table Of Contents / HTML -->
+
+<!--
+================================= 
+1.0 = Header Section
+    
+2.0 = Our Products Section
+    2.1 = Finch House Blend
+    2.2 = Evening Oak
+    2.3 = Coffee Review
+    2.4 = Sunrise
+    2.5 = Midnight
+    2.6 = Espresso
+   
+3.0 = Subscribe Newsleter
+
+4.0 = Contact Section
+
+5.0 = Footer Section
+ ================================
+ -->
+
+
+
+
+
 <body>
-<header class="wrapper">
-	<div class="row">
-    	<nav>
-        	<ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Product</a></li>
-                <li><figure><img src="img/logo.png" alt="Logo"/></figure></li>
-                <li><a href="#">Subscribe</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-	</div>
-</header>
-<div id="hero">
-	<div class="wrapper">
-        <section>
-            <h1>Twin Finch Roastery</h1>
-            <p>Twin Finch Roastery is an authentic micro-roastery; small, dedicated, and highly, foused on quality. We have a constantly evolving, hand picked selection of fine coffee origins and delicious blends engineered to help you brew a cafe- quality cup at home.</p>
-            <a href="#product">View our product</a> 
-        </section>
+
+<!-- 1. HEADER SECTION -->
+<header>
+    <div class="wrapper">
+        <div class="row">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><figure><img src="img/logo.png" alt="Logo of twin fich roatery with two sillohette birds facing eachother on top"/></figure></li> 
+                    <li><a href="#">Subscribe</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
-</div>
-<div class="wrapper">
+    <div id="hero">
+        <div class="wrapper">
+            <section>
+                <header>
+                    <h1>Twin Finch Roastery</h1>
+                </header>
+                <p>Twin Finch Roastery is an authentic micro-roastery; small, dedicated, and highly, foused on quality. We have a constantly evolving, hand picked selection of fine coffee origins and delicious blends engineered to help you brew a cafe- quality cup at home.</p>
+                <a href="#product">View our product</a> 
+            </section>
+        </div>
+    </div>
+</header>
+
+<!-- OUR PRODUCTS SECTION -->
+<section class="wrapper">
 	<section>
-    <h2 id="product">Our Product</h2>
-    <p class="text-center-75">Our coffee is roasted in a hot air, refractory lined roaster with an extraordinary level of control. The significance of relying on a high volume of hot air to roast coffee beans can't be understated. Most small coffee roasters use a single stage burner which offers virtually no control during the roasting process. The refractory significantly reduces hot spots which can damage coffee beans and produces a much more even roasting enviorment.</p>
+    <header>
+    	<h2 id="product">Our Product</h2>
+    </header>
+    <p class="review">Our coffee is roasted in a hot air, refractory lined roaster with an extraordinary level of control. The significance of relying on a high volume of hot air to roast coffee beans can't be understated. Most small coffee roasters use a single stage burner which offers virtually no control during the roasting process. The refractory significantly reduces hot spots which can damage coffee beans and produces a much more even roasting enviorment.</p>
   	</section>
     <div class="row">
     	<section class="col-1-2">
+        	<!-- 2.1 Finch House Blend -->
     		<div class="row">
-    			<p> Our house blend was rated a 98 by coffeereview.com!</p>
+    			<p class="red-italic"> Our house blend was rated a 98 by coffeereview.com!</p>
     			<div class="col-1-3">
     				<figure> 
-                    	<img src="img/finch-house-blend.jpg" alt="Logo"/>
+                    	<img src="img/finch-house-blend.png" alt="Logo"/>
                     </figure>
    				</div>
     			<div class="col-2-3">
-    				<h3>Finch House Blend</h3>
-                    <h4>Medium</h4>
+                	<header>
+    					<h3>Finch House Blend</h3>
+                    </header>
+                    <header>
+                    	<h4>Medium</h4>
+                    </header>
                     <p>Hint of citrus, complemented by flavors of dark chocolate, peanut and light pepper notes.</p>
                     <p><span>Cajamarca &amp; Moyobamba Regions, Peru</span></p>
-                    <p>1lb $17.95<a>Buy Now</a></p>
+                    <p><b>1lb $17.95</b><a>Buy Now</a></p>
     			</div>
     		</div>
         </section>
     	<section class="col-1-2">
+        	<!-- 2.2 = Evening Oak -->
             <div class="row">
-                <p>Our featured roast of the season. </p>
+                <p class="red-italic">Our featured roast of the season. </p>
                 <div class="col-1-3">
                     <figure> 
-                        <img src="img/evening-oak.jpg" alt="Logo"/>
+                        <img src="img/evening-oak.png" alt="Logo"/>
                     </figure>
                 </div>
                 <div class="col-2-3">
-                    <h3>Evening Oak</h3>
-                    <h4>Medium-Dark</h4>
+                	<header>
+                    	<h3>Evening Oak</h3>
+                    </header>
+                    <header>
+                    	<h4>Medium-Dark</h4>
+                    </header>
                     <p>Pungently rich and complex with hints of night-blooming flowers and coriander in aroma and cup.</p>
                     <p><span>Cajamarca &amp; Moyobamba Regions, Peru</span></p>
-                    <p>1lb $17.95<a>Buy Now</a></p>
+                    <p><b>1lb $17.95</b><a>Buy Now</a></p>
                 </div>
             </div>
     	</section>
 	</div>
-    <p class="text-center-75">This extraordinary coffee almost defies description with its aromatic complexity while retaining a classic clarity of structure.<br/>– Coffee Review</p>
+    <!-- 2.3 = Coffee Review -->
+    <p class="review">This extraordinary coffee almost defies description with its aromatic complexity while retaining a classic clarity of structure.<br/>– Coffee Review</p>
+    <!-- 2.4 = Sunrise -->
     <div class="row">
     	<section class="col-1-3">
         	<div class="row">
         		<div class="col-1-3">
                     <figure> 
-                        <img src="img/sunrise.jpg" alt="Logo"/> 
+                        <img src="img/sunrise.png" alt="Logo"/> 
                     </figure>
             	</div>
                 <div class="col-2-3">
-                    <h3>Sunrise</h3>
-                    <h4>Light</h4>
+                	<header>
+                    	<h3>Sunrise</h3>
+                    </header>
+                    <header>
+                    	<h4>Light</h4>
+                    </header>
                     <p>Light, fruity acidity which complements its fully nutty body and unique spicy tones.</p>
                     <p><span>La Chiapas, Mexico</span></p>
-                    <p>1lb $17.95<a>Buy Now</a></p>
+                    <p><b>1lb $17.95</b><a>Buy Now</a></p>
                 </div>
       		</div>
         </section>
     	<section class="col-1-3">
+        <!-- 2.5 = Midnight -->
         	<div class="row">
         		<div class="col-1-3">
                 	<figure> 
-                    	<img src="img/midnight.jpg" alt="Logo"/> 
+                    	<img src="img/midnight.png" alt="Logo"/> 
                     </figure>
             	</div>
                 <div class="col-2-3">
-                	<h3>Midnight</h3>
-                    <h4>Dark</h4>
+                	<header>
+                		<h3>Midnight</h3>
+                    </header>
+                    <header>
+                    	<h4>Dark</h4>
+                    </header>
                     <p>Roasted into second crack for a big, bold and dark cup. Beans display oil. </p>
                     <p><span>Latin America</span></p>
-                    <p>1lb $17.95<a>Buy Now</a></p>
+                    <p><b>1lb $17.95</b><a>Buy Now</a></p>
                 </div>
             </div>
         </section>
         <section class="col-1-3">
+        <!-- 2.6 = Espresso -->
             <div class="row">
                 <div class="col-1-3">
                     <figure> 
-                        <img src="img/espresso.jpg" alt="Logo"/> 
+                        <img src="img/espresso.png" alt="Logo"/> 
                     </figure>
                 </div>
                 <div class="col-2-3">
-                    <h3>Espresso</h3>
-                    <h4>Medium</h4>
+                	<header>
+                    	<h3>Espresso</h3>
+                    </header>
+                    <header>
+                    	<h4>Medium</h4>
+                    </header>
                     <p>Clean, a little roasty, sumptuous crema, unfussy, delicious.</p>
                     <p><span>Latin America, Africa, Indonesia</span></p>
-                    <p>1lb $19.95<a>Buy Now</a></p>
+                    <p><b>1lb $19.95</b><a>Buy Now</a></p>
                 </div>
             </div>
         </section>
 	</div>
-    <p class="text-center-75"> Our orders usually ship quickly and arrive within three buisness days. We only ship the freshest coffee and your satisfaction is guarenteed. Our rotating, featured coffees are roasted on a more limited basis and your order may be held until the next time a natch hits the roaster. We only ship whole bean, but will grind for your in-store per request.</p>
+    <p class="review"> Our orders usually ship quickly and arrive within three buisness days. We only ship the freshest coffee and your satisfaction is guarenteed. Our rotating, featured coffees are roasted on a more limited basis and your order may be held until the next time a natch hits the roaster. We only ship whole bean, but will grind for your in-store per request.</p>
     <a id="article-link"> How to brew article</a> 
-</div>
+</section>
+
+<!--SUBSCRIBE NEWSLETTER SECTION -->
 <div class="bg-brown">
 	<div class="wrapper">
     	<div class="row">
         	<div class="col-1-4">
-        		<h4>Subscribe to our newsletter</h4>
+            	<header>
+        			<h4>Subscribe to our newsletter</h4>
+                </header>
       		</div>
+            <form>
             <div class="col-1-2">
                 <label></label>
                 <input type="email" name="email" placeholder="Enter your email here..">
@@ -155,12 +222,17 @@
           	<div class="col-1-6">
             	<a>Subscribe</a>
             </div>
+            </form>
         </div>
 	</div>
 </div>
+
+<!-- CONTACT SECTION -->
 <div class="wrapper">
-	<h2>Contact Us</h2>
-   	<div class="row">
+	<header>
+		<h2>Contact Us</h2>
+   	</header>
+    <div class="row">
     	<div class="col-1-2">
           	<div class="col-6-8">
             	<div id="map"></div>
@@ -182,24 +254,26 @@
        	</div>
 	</div>
 </div>
-<div class="bg-tan">
+
+<!-- FOOTER SECTION -->
+<footer>
 	<div class="wrapper">
     	<nav>
         	<ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Product</a></li>
-                <li><figure> <img src="img/logo.png" alt="Logo"/> </figure></li>
+                <li><figure> <img src="img/logo.png" alt="Logo of twin fich roatery with two sillohette birds facing eachother on top"/> </figure></li>
                 <li><a href="#">Subscribe</a></li>
                 <li><a href="#">Contact</a></li>
       		</ul>
         </nav>
-    	<ul>
-            <li><a></a></li>
-            <li><a></a></li>
-            <li><a></a></li>
+    	<ul id="social-media">
+            <li><a href="http://www.facebook.com"><figure><img src="img/facebook.png" alt="facebook icon and link"></figure></a></li>
+            <li><a href="http://www.twitter.com"><figure><img src="img/twitter.png" alt="twitter icon and link"></figure></a></li>
+            <li><a href="http://www.googleplus.com"><figure><img src="img/google-plus.png" alt="google plus icon and link"></figure></a></li>
         </ul>
 	</div>
-</div>
+</footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
 <script>
 jQuery(document).ready(function($){
