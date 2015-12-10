@@ -59,10 +59,10 @@
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Product</a></li>
-                    <li><figure><img src="img/logo.png" alt="Logo of twin fich roatery with two sillohette birds facing eachother on top"/></figure></li> 
-                    <li><a href="#">Subscribe</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#product">Product</a></li>
+                    <li><figure><img id="logo-nav" src="img/logo.png" alt="Logo of twin fich roatery with two sillohette birds facing eachother on top"/></figure></li> 
+                    <li><a href="#subscribe">Subscribe</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -70,9 +70,7 @@
     <div id="hero">
         <div class="wrapper">
             <section>
-                <header>
-                    <h1>Twin Finch Roastery</h1>
-                </header>
+                <h1>Twin Finch Roastery</h1>
                 <p>Twin Finch Roastery is an authentic micro-roastery; small, dedicated, and highly, foused on quality. We have a constantly evolving, hand picked selection of fine coffee origins and delicious blends engineered to help you brew a cafe- quality cup at home.</p>
                 <a href="#product">View our product</a> 
             </section>
@@ -138,7 +136,7 @@
     <p class="review">This extraordinary coffee almost defies description with its aromatic complexity while retaining a classic clarity of structure.<br/>– Coffee Review</p>
     <!-- 2.4 = Sunrise -->
     <div class="row">
-    	<section class="col-1-3">
+    	<section class="col-1-3-group">
         	<div class="row">
         		<div class="col-1-3">
                     <figure> 
@@ -158,7 +156,7 @@
                 </div>
       		</div>
         </section>
-    	<section class="col-1-3">
+    	<section class="col-1-3-group">
         <!-- 2.5 = Midnight -->
         	<div class="row">
         		<div class="col-1-3">
@@ -179,7 +177,7 @@
                 </div>
             </div>
         </section>
-        <section class="col-1-3">
+        <section class="col-1-3-group">
         <!-- 2.6 = Espresso -->
             <div class="row">
                 <div class="col-1-3">
@@ -206,7 +204,7 @@
 </section>
 
 <!--SUBSCRIBE NEWSLETTER SECTION -->
-<div class="bg-brown">
+<div id="subscribe" class="bg-brown">
 	<div class="wrapper">
     	<div class="row">
         	<div class="col-1-4">
@@ -216,8 +214,8 @@
       		</div>
             <form>
             <div class="col-1-2">
-                <label></label>
-                <input type="email" name="email" placeholder="Enter your email here..">
+                <label for="enter-email"></label>
+                <input id="enter-email" type="email" name="email" placeholder="Enter your email here..">
       		</div>
           	<div class="col-1-6">
             	<a>Subscribe</a>
@@ -228,7 +226,7 @@
 </div>
 
 <!-- CONTACT SECTION -->
-<div class="wrapper">
+<div id="contact" class="wrapper">
 	<header>
 		<h2>Contact Us</h2>
    	</header>
@@ -242,12 +240,12 @@
     	<div class="col-1-2">
         	<div class="col-8-10">
         	<form>
-            	<label>Name</label>
-                <input type="text" name="fname">
-                <label>Email</label>
-                <input type="email" name="email" >
-                <label>Comment</label>
-                <textarea rows="6"></textarea>
+            	<label for="name">Name</label>
+                <input id="name" type="text" name="fname">
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email">
+                <label for="comment" >Comment</label>
+                <textarea id="comment" rows="6"></textarea>
                 <input id="submit" type="submit" value="submit">
             </form>
             </div>
@@ -261,10 +259,10 @@
     	<nav>
         	<ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Product</a></li>
+                <li><a href="#product">Product</a></li>
                 <li><figure> <img src="img/logo.png" alt="Logo of twin fich roatery with two sillohette birds facing eachother on top"/> </figure></li>
-                <li><a href="#">Subscribe</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#subscribe">Subscribe</a></li>
+                <li><a href="#contact">Contact</a></li>
       		</ul>
         </nav>
     	<ul id="social-media">
