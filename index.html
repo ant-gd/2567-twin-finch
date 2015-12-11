@@ -13,7 +13,7 @@
       function initialize() {
         var mapCanvas = document.getElementById('map');
         var mapOptions = {
-          center: new google.maps.LatLng(44.5403, -78.5463),
+          center: new google.maps.LatLng(45.5425913,-122.7945076),
           zoom: 8,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         }
@@ -46,17 +46,13 @@
  ================================
  -->
 
-
-
-
-
 <body>
 
 <!-- 1. HEADER SECTION -->
 <header>
     <div class="wrapper">
         <div class="row">
-            <nav>
+            <nav id="mb-4-r">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#product">Product</a></li>
@@ -84,7 +80,7 @@
     <header>
     	<h2 id="product">Our Product</h2>
     </header>
-    <p class="review">Our coffee is roasted in a hot air, refractory lined roaster with an extraordinary level of control. The significance of relying on a high volume of hot air to roast coffee beans can't be understated. Most small coffee roasters use a single stage burner which offers virtually no control during the roasting process. The refractory significantly reduces hot spots which can damage coffee beans and produces a much more even roasting enviorment.</p>
+    <p id="product-p">Our coffee is roasted in a hot air, refractory lined roaster with an extraordinary level of control. The significance of relying on a high volume of hot air to roast coffee beans can't be understated. Most small coffee roasters use a single stage burner which offers virtually no control during the roasting process. The refractory significantly reduces hot spots which can damage coffee beans and produces a much more even roasting enviorment.</p>
   	</section>
     <div class="row">
     	<section class="col-1-2">
@@ -105,7 +101,7 @@
                     </header>
                     <p>Hint of citrus, complemented by flavors of dark chocolate, peanut and light pepper notes.</p>
                     <p><span>Cajamarca &amp; Moyobamba Regions, Peru</span></p>
-                    <p><b>1lb $17.95</b><a>Buy Now</a></p>
+                    <p><b>1lb $17.95</b><a href="http://www.paypal.com" target="_blank">Buy Now</a></p>
     			</div>
     		</div>
         </section>
@@ -127,7 +123,7 @@
                     </header>
                     <p>Pungently rich and complex with hints of night-blooming flowers and coriander in aroma and cup.</p>
                     <p><span>Cajamarca &amp; Moyobamba Regions, Peru</span></p>
-                    <p><b>1lb $17.95</b><a>Buy Now</a></p>
+                    <p><b>1lb $17.95</b><a href="http://www.paypal.com" target="_blank">Buy Now</a></p>
                 </div>
             </div>
     	</section>
@@ -152,7 +148,7 @@
                     </header>
                     <p>Light, fruity acidity which complements its fully nutty body and unique spicy tones.</p>
                     <p><span>La Chiapas, Mexico</span></p>
-                    <p><b>1lb $17.95</b><a>Buy Now</a></p>
+                    <p><b>1lb $17.95</b><a href="http://www.paypal.com" target="_blank">Buy Now</a></p>
                 </div>
       		</div>
         </section>
@@ -173,7 +169,7 @@
                     </header>
                     <p>Roasted into second crack for a big, bold and dark cup. Beans display oil. </p>
                     <p><span>Latin America</span></p>
-                    <p><b>1lb $17.95</b><a>Buy Now</a></p>
+                    <p><b>1lb $17.95</b><a href="http://www.paypal.com" target="_blank">Buy Now</a></p>
                 </div>
             </div>
         </section>
@@ -194,13 +190,13 @@
                     </header>
                     <p>Clean, a little roasty, sumptuous crema, unfussy, delicious.</p>
                     <p><span>Latin America, Africa, Indonesia</span></p>
-                    <p><b>1lb $19.95</b><a>Buy Now</a></p>
+                    <p><b>1lb $19.95</b><a href="http://www.paypal.com" target="_blank">Buy Now</a></p>
                 </div>
             </div>
         </section>
 	</div>
     <p class="review"> Our orders usually ship quickly and arrive within three buisness days. We only ship the freshest coffee and your satisfaction is guarenteed. Our rotating, featured coffees are roasted on a more limited basis and your order may be held until the next time a natch hits the roaster. We only ship whole bean, but will grind for your in-store per request.</p>
-    <a id="article-link"> How to brew article</a> 
+    <a id="article-link" href="http://www.coffee.com" target="_blank"> How to brew article</a> 
 </section>
 
 <!--SUBSCRIBE NEWSLETTER SECTION -->
@@ -218,7 +214,7 @@
                 <input id="enter-email" type="email" name="email" placeholder="Enter your email here..">
       		</div>
           	<div class="col-1-6">
-            	<a>Subscribe</a>
+            	<a id="subscribe-button" href="#">Subscribe</a>
             </div>
             </form>
         </div>
@@ -256,7 +252,7 @@
 <!-- FOOTER SECTION -->
 <footer>
 	<div class="wrapper">
-    	<nav>
+    	<nav id="first-nav">
         	<ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#product">Product</a></li>
@@ -266,9 +262,9 @@
       		</ul>
         </nav>
     	<ul id="social-media">
-            <li><a href="http://www.facebook.com"><figure><img src="img/facebook.png" alt="facebook icon and link"></figure></a></li>
-            <li><a href="http://www.twitter.com"><figure><img src="img/twitter.png" alt="twitter icon and link"></figure></a></li>
-            <li><a href="http://www.googleplus.com"><figure><img src="img/google-plus.png" alt="google plus icon and link"></figure></a></li>
+            <li><a href="http://www.facebook.com" target="_blank"><figure><img src="img/facebook.png" alt="facebook icon and link"></figure></a></li>
+            <li><a href="http://www.twitter.com" target="_blank"><figure><img src="img/twitter.png" alt="twitter icon and link"></figure></a></li>
+            <li><a href="http://www.googleplus.com" target="_blank"><figure><img src="img/google-plus.png" alt="google plus icon and link"></figure></a></li>
         </ul>
 	</div>
 </footer>

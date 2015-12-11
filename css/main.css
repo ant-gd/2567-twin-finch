@@ -1,17 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
 
-
-/*--------------------------------------------------------------
->>> CSS STANDARDS
-----------------------------------------------------------------
-1. Place in appropriate section
-2. Add new sections to the Table of Contents
-3. Order properties alphabetically inside each declaration
-4. Declaration selectors should each occupy a new line
-5. Enter one new line between declarations
---------------------------------------------------------------*/
-
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -19,17 +8,10 @@
 	1.1 - Headings
 	1.2 - Body Copy
 	1.3 - Buttons
-	1.4 - Forms
-	1.5 - Lists
-	1.6 - Tables
 2.0 - Navigation Menus
 	3.1 - Main Menu
-	3.2 - Sub Menu
-	3.3 - Footer Menu
 3.0 - Content
 	3.1 - Site Structure (Site Header, Advertisement, Site Footer)
-	3.2 - Section Name
-	3.3 - Section Name
 4.0 - Media
 5.0 - Utility
 	5.1 - Background Colors
@@ -45,11 +27,9 @@
 
 /*--------------1.1 - Headings
 --------------------------- */
-
 h4, a {
 	text-transform: uppercase;
 }
-
 h1, h2, h3, h4, a {
 	font-family: 'Open Sans', sans-serif;
 }
@@ -60,116 +40,71 @@ body {
 	font-size: 12px;
 	font-family: 'Lora', serif;
 }
-
 span, .red-italic {
 	font-style: italic;
 }
-
 li a, a {
 	text-decoration: none;
 }
 
 /*---------------1.3 - Buttons
 --------------------------- */
-
 a {
 	padding: .5rem 2rem; 
 }
 nav a {
 	padding: .5rem 1.25rem;
 }
-
-/*---------------1.4 - Forms
---------------------------- */
-
-
-/*---------------1.5 - List
---------------------------- */
-
-
-/*---------------1.6 - Tables
---------------------------- */
-
-
-
-
+#submit {
+	border: none;
+}
 /*--------------------------------------------------------------
 2.0 - NAVIGATION MENUS
 -------------------------------------------------------------- */
 
 /*-------------2.1 - Main Menu
 --------------------------- */
-
+li {
+	display: inline-block;
+	margin: 2rem;
+}
+li a {
+    color: black;
+    padding: 14px 16px;
+}
+li a:hover {
+    color:#84161f;
+}
 ul {
     list-style-type: none;
     text-align: center;
     padding: 0;
 }
-
-li {
-	display: inline-block;
-	margin: 2rem;
-
-}
-
-li a {
-    color: black;
-    padding: 14px 16px;
-}
-
-li a:hover {
-    color:#84161f;
-}
-
-
-
-
-
-/*--------------2.2 - Sub Menu
---------------------------- */
-
-/*-----------2.3 - Footer Menu
---------------------------- */
-
-
 /*--------------------------------------------------------------
 3.0 - CONTENT
 -------------------------------------------------------------- */
 
 /*--------3.1 - Site Structure
 --------------------------- */
-
 *, *:after, *:before {
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
 .wrapper {
 	width: 70%;  /* original width 1024px */
  /* width: 1024px; */
 	margin: 0 auto;
 }
 
-.row:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
-
-/*----------3.2 - Section Name
---------------------------- */
-
-/*----------3.3 - Section Name
---------------------------- */
-
-
-
 /*--------------------------------------------------------------
 4.0 - MEDIA
 -------------------------------------------------------------- */
-
 #hero {
 	background:url(../img/hero.jpg) no-repeat center; 
  	-webkit-background-size: cover;
@@ -177,7 +112,6 @@ li a:hover {
  	-o-background-size: cover;
  	background-size: cover;
 }
-
 #map {
 	height: 17.28rem;
 }
@@ -188,153 +122,137 @@ li a:hover {
 
 /*-------5.1 background-colors
 --------------------------- */
-
 .bg-brown {
 	background-color: #291a18;
 }
-
 #hero a, .bg-brown a, section a, #submit {
 	background-color: #84161f;
 }
-
 #hero a:hover, .bg-brown a:hover, section a:hover, #submit:hover {
 	background-color: #724a2d;
 }
 
-
 /* ------------5.2 text-colors
 ----------------------------*/
-
-.col-1-4 h4, .col-1-6 a, h1, #hero p, #hero a, section a, .bg-brown a, #submit {
-	color: #f9ead7;
-}
-
-.red-italic {
-	color: #84161f;
-}
 
 body {
 	color: #291a18;
 }
+.col-1-4 h4, .col-1-6 a, h1, #hero p, #hero a, section a, .bg-brown a, #submit {
+	color: #f9ead7;
+}
+.red-italic {
+	color: #84161f;
+}
 
 /* -------------5.3 text-sizes
 ----------------------------*/
-
+.col-1-3 a {
+	font-size:.65rem; 
+}
 h1 {
 	font-size: 2rem;
 }
-
 h2 {
 	font-size: 1.5rem;
 }
-
 h3 { 
 	font-size: 1.25rem;
-}
-
-.col-1-3 a {
-	font-size:.65rem; 
 }
 
 /* --------------5.4 Alignment
 ----------------------------*/
 
-h2, .review, nav ul, #article-link {
-	text-align: center;
+/*--margin--*/
+#article-link {
+	margin-left: 40%;
 }
-
-.review, header .row, #social-media {
-	margin: 0 auto;
-}
-
 .bg-brown {
     margin: 3rem 0;
 }
-
-input, textarea {
-	margin-bottom: .75rem;
-}
-
-
- h2 {
-	margin: 6rem 0 1rem 0;
- }
-
-
-
 .col-1-3 figure img, .col-1-3 .row .col-1-3 figure img {
 	margin-left: -2rem;
 }
-
+.col-1-6 {
+	margin-top: .5rem;
+}
 h3 {
 	-webkit-margin-after: 0;
 }
-
 h4 {
 	-webkit-margin-before: .5rem;
 }
-
+h2, .review, nav ul, #product-p {
+	text-align: center;
+}
+h2 {
+	margin: 6rem 0 1rem 0;
+}
 header figure	{
 	-webkit-margin-before: 0;
     -webkit-margin-after: 0;
     -webkit-margin-start: 0;
     -webkit-margin-end: 0;
 }
-
+input, textarea {
+	margin-bottom: .75rem;
+}
+.review, header .row, #social-media, #product-p {
+	margin: 0 auto;
+}
+#social-media li {
+	margin: 0rem;
+}
+#subscribe-button {
+	margin-left: 1.2rem;
+}
 h1 {
 	padding-bottom: 0;
 	margin-bottom: 0;
 }
 
-.review {
-	padding: 5rem;
-}
-
+/*--padding--*/
 #hero {
 	padding: 20rem 0 5rem 0;
 }
-
 li a, .bg-brown {
 	padding: 2rem 0;
 }
-
 .bg-brown input {
 	padding: .5rem 0;
 }
-
 .col-1-3 a, #submit {
 	padding: .35rem 1rem;
 }
-
 [class*='col-']:first-of-type {
 	padding-left: 0;
 }
-
 [class*='col-']:last-of-type {
 	padding-right: 0;
 }
-
+#product-p {
+	padding: 0 5rem 5rem 5rem;
+}
+.review {
+	padding: 5rem;
+}
+#subscribe {
+	padding-top: 2.75rem;
+}
 p {
 	line-height: 1.25rem;
 }
-
-
 [class*='col-'], #hero a {
 	float:left;
 }
-
 .col-2-3, .col-1-2 .col-8-10, #submit, section section a {
 	float:right;
 }
 
-
-
-
 /*--------------------------------------------------------------
 6.0 - 12 COLUMN GRID/WIDTHS
 -------------------------------------------------------------- */
-
-.col-1, input, textarea {
+.col-1, input, textarea, #social-media {
 	width: 100%;
 }
 .col-1-2 {
@@ -349,7 +267,7 @@ p {
 .col-1-4 {
 	width: 25%;
 }
-.col-3-4, .review {
+.col-3-4, .review, #product-p {
 	width: 75%;
 }
 .col-1-5, #submit {
@@ -401,92 +319,79 @@ p {
 	width: 83.333%;
 }
 
-#social-media {
-	width: 100%;
-}
-
-
-
-
-
-
 @media screen and (max-width: 480px) {
 	
-	.wrapper, header p{
-		width: 97%;
-	}
+	/* ------widths------*/
 	
-	
-	[class*='col-'], .review {
+	[class*='col-'], .review, #product-p, nav ul {
 		padding: 0 10px 20px 10px;
 		width: 100%;	
-
 	}
-	
 	.col-1-3 {
 		width: 40%;
 	}
-
-	
 	.col-2-3 {
 		width: 60%;
 	}
-	
 	.col-1-4, .col-3-4, .col-1-8 {
 		width: 50%;
 	}
-	
-	nav ul {
-		position:relative;
-		width: 100%;
-	}
-	
-	nav li {
-		padding: 0;
-		margin: 0;
-	}
-	
-	nav li a {
-		padding: 0;
-	}
-	
-	#social-media {
-		padding-top: 5rem;
-	}
-	
-	nav ul li:first-child, nav ul:nth-child(2) {
-		float: left;
-	}
-	
-	nav ul li:nth-child(4), nav ul:nth-child(5) {
-		float: right;
-	}
-	
-	nav figure {
-		position: absolute;
-		top: 3rem;
-		left: 43%
-	}
-
 	img {
 		max-width: 100%;
 		height:auto;
 	}
-
-	.col-1-3 figure img {
-		margin-left: 0;
+	.wrapper, header p{
+		width: 97%;
 	}
-
-	figure {
-		-webkit-margin-before:0;
-    -webkit-margin-after:0;
-    -webkit-margin-start:0;
-    -webkit-margin-end:0;
-	}
+	
+	/* ------padding------*/
 	
 	#hero {
 		padding: 6rem 0 6rem 0;
 	}
+	nav li a, nav li {
+		padding: 0;
+	}
+	#social-media {
+		padding-top: 3rem;
+	}
 	
-	
+	/* ------margin------*/
+	ul li:nth-child(3), nav li {
+		margin: 0;
+	}	
+	#mb-4-r {
+		margin-bottom: 4rem;
+	}	
+	nav li {
+		margin: .75rem;
+	}
+	.col-1-3 figure img {
+		margin-left: 0;
+	}
+	#article-link {
+		margin-left: 25%;
+	}
+	#subscribe-button {
+		float: right;
+		margin-right: 10px;
+	}
+	#social-media li {
+		margin: 1rem 2rem;
+	}	
+	figure {
+	-webkit-margin-before:0;
+    -webkit-margin-after:0;
+    -webkit-margin-start:0;
+    -webkit-margin-end:0;
+	}	
+	nav figure {
+		position: absolute;
+		top: 3rem;
+		left: 43%
+	}	
+	nav ul {
+		position:relative;
+	}
+
 }
