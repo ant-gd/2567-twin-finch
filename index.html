@@ -21,7 +21,7 @@
       }
       google.maps.event.addDomListener(window, 'load', initialize);
 </script>
-<title>Responsive Grid</title>
+<title>Twin Finch</title>
 </head>
 
 <!-- Table Of Contents / HTML -->
@@ -51,10 +51,10 @@
 <!-- 1. HEADER SECTION -->
 <header>
     <div class="wrapper">
-        <div class="row">
+        <div id="#top" class="row">
             <nav id="mb-4-r">
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="#top">Home</a></li>
                     <li><a href="#product">Product</a></li>
                     <li><figure><img id="logo-nav" src="img/logo.png" alt="Logo of twin fich roatery with two sillohette birds facing eachother on top"/></figure></li> 
                     <li><a href="#subscribe">Subscribe</a></li>
@@ -63,25 +63,21 @@
             </nav>
         </div>
     </div>
-    <div id="hero">
+    <section id="hero">
         <div class="wrapper">
-            <section>
-                <h1>Twin Finch Roastery</h1>
-                <p>Twin Finch Roastery is an authentic micro-roastery; small, dedicated, and highly, foused on quality. We have a constantly evolving, hand picked selection of fine coffee origins and delicious blends engineered to help you brew a cafe- quality cup at home.</p>
-                <a href="#product">View our product</a> 
-            </section>
+        	<h1>Twin Finch Roastery</h1>
+            <p>Twin Finch Roastery is an authentic micro-roastery; small, dedicated, and highly, foused on quality. We have a constantly evolving, hand picked selection of fine coffee origins and delicious blends engineered to help you brew a cafe- quality cup at home.</p>
+            <a href="#product">View our product</a> 
         </div>
-    </div>
+    </section>
 </header>
 
 <!-- OUR PRODUCTS SECTION -->
 <section class="wrapper">
-	<section>
     <header>
     	<h2 id="product">Our Product</h2>
     </header>
     <p id="product-p">Our coffee is roasted in a hot air, refractory lined roaster with an extraordinary level of control. The significance of relying on a high volume of hot air to roast coffee beans can't be understated. Most small coffee roasters use a single stage burner which offers virtually no control during the roasting process. The refractory significantly reduces hot spots which can damage coffee beans and produces a much more even roasting enviorment.</p>
-  	</section>
     <div class="row">
     	<section class="col-1-2">
         	<!-- 2.1 Finch House Blend -->
@@ -89,7 +85,7 @@
     			<p class="red-italic"> Our house blend was rated a 98 by coffeereview.com!</p>
     			<div class="col-1-3">
     				<figure> 
-                    	<img src="img/finch-house-blend.png" alt="Logo"/>
+                    	<img src="img/finch-house-blend.png" alt="black 1pound bag of twin finch coffee"/>
                     </figure>
    				</div>
     			<div class="col-2-3">
@@ -111,7 +107,7 @@
                 <p class="red-italic">Our featured roast of the season. </p>
                 <div class="col-1-3">
                     <figure> 
-                        <img src="img/evening-oak.png" alt="Logo"/>
+                        <img src="img/evening-oak.png" alt="black 1pound bag of twin finch coffee"/>
                     </figure>
                 </div>
                 <div class="col-2-3">
@@ -129,14 +125,16 @@
     	</section>
 	</div>
     <!-- 2.3 = Coffee Review -->
-    <p class="review">This extraordinary coffee almost defies description with its aromatic complexity while retaining a classic clarity of structure.<br/>– Coffee Review</p>
+    <blockquote>
+    	<p class="review">This extraordinary coffee almost defies description with its aromatic complexity while retaining a classic clarity of structure.<br/>– Coffee Review</p>
+    </blockquote>
     <!-- 2.4 = Sunrise -->
     <div class="row">
     	<section class="col-1-3-group">
         	<div class="row">
         		<div class="col-1-3">
                     <figure> 
-                        <img src="img/sunrise.png" alt="Logo"/> 
+                        <img src="img/sunrise.png" alt="black 1pound bag of twin finch coffee"/> 
                     </figure>
             	</div>
                 <div class="col-2-3">
@@ -157,7 +155,7 @@
         	<div class="row">
         		<div class="col-1-3">
                 	<figure> 
-                    	<img src="img/midnight.png" alt="Logo"/> 
+                    	<img src="img/midnight.png" alt="black 1pound bag of twin finch coffee"/> 
                     </figure>
             	</div>
                 <div class="col-2-3">
@@ -178,7 +176,7 @@
             <div class="row">
                 <div class="col-1-3">
                     <figure> 
-                        <img src="img/espresso.png" alt="Logo"/> 
+                        <img src="img/espresso.png" alt="black 1pound bag of twin finch coffee"/> 
                     </figure>
                 </div>
                 <div class="col-2-3">
@@ -235,15 +233,15 @@
         </div>
     	<div class="col-1-2">
         	<div class="col-8-10">
-        	<form>
-            	<label for="name">Name</label>
-                <input id="name" type="text" name="fname">
-                <label for="email">Email</label>
-                <input id="email" type="email" name="email">
-                <label for="comment" >Comment</label>
-                <textarea id="comment" rows="6"></textarea>
-                <input id="submit" type="submit" value="submit">
-            </form>
+                <form>
+                    <label for="name">Name</label>
+                    <input id="name" type="text" name="fname">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email">
+                    <label for="comment" >Comment</label>
+                    <textarea id="comment" rows="6"></textarea>
+                    <input id="submit" type="submit" value="submit">
+                </form>
             </div>
        	</div>
 	</div>
@@ -254,7 +252,7 @@
 	<div class="wrapper">
     	<nav id="first-nav">
         	<ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="#top">Home</a></li>
                 <li><a href="#product">Product</a></li>
                 <li><figure> <img src="img/logo.png" alt="Logo of twin fich roatery with two sillohette birds facing eachother on top"/> </figure></li>
                 <li><a href="#subscribe">Subscribe</a></li>
